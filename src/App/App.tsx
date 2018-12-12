@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Form from './Components/Form';
 import Header from './Components/Header';
 import { ICategory } from './Interfaces';
 import Utils from './Utils';
@@ -21,6 +22,13 @@ class App extends Component<{}, IAppState> {
         return (
             <div className="App">
                 <Header />
+
+                <div className="uk-container">
+                    <Form
+                        categories={this.state.categories}
+                        getCategories={this.getCategories}
+                    />
+                </div>
             </div>
         );
     }
