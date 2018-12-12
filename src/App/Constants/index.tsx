@@ -1,3 +1,3 @@
 export const Constants = Object.freeze({
-    CONSTANT: ''
+    EVENTBRITE_API: 'https://www.eventbriteapi.com/v3'
 });
